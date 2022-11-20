@@ -333,15 +333,15 @@ else
 end
 
 local getserver = requesthttps({
-    ["Url"] = "http://localhost:80/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://127.0.0.1/Whitelist/Whitelist.php?Key="..Key.."&discord_id="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 local getserver2 = requesthttps({
-    ["Url"] = "http://localhost:80/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://127.0.0.1/Whitelist/Whitelist.php?Key="..Key.."&discord_id="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 local gethwid = requesthttps({
-    ["Url"] = "http://localhost:80/Hwid", -- ใส่ Ip
+    ["Url"] = "http://127.0.0.1/Hwid", -- ใส่ Ip
 })
 wait(1)
 game.CoreGui.ChildAdded:connect(function(q)
